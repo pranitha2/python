@@ -77,13 +77,16 @@ number that is let's say 8.'''
 
 
 x=[1,2,3,4,5,6,7,8,9,-1]
-def psum(list):
-    for results in list:
-        a = results
-        for i in list:
-            for j in list:
-                if a == i + j:
-                    print(psum())
+
+def pairsum(x):
+    n = len(x)
+    final_sum = 8
+    for i in range(0,n):
+        for j in range(1,n):
+            if x[i]+x[j] == final_sum :
+                print((x[i],x[j]))
+            
+pairsum(x)
                
 
 '''8. Write a program in Python to complete the following task:
